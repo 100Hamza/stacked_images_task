@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 class StackedWidgets extends StatelessWidget {
   final List<Widget> items;
-  final TextDirection direction;
   final double size;
   final double xShift;
   const StackedWidgets({
     Key? key,
     required this.items,
-    this.direction = TextDirection.ltr,
     this.size = 100,
     this.xShift = 10,
   }) : super(key: key);
@@ -41,7 +39,7 @@ class StackedWidgets extends StatelessWidget {
         .toList();
 
     return Stack(
-      children: allItems.reversed.toList()
+      children: allItems
     );
   }
 }
