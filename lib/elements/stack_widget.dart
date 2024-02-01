@@ -39,7 +39,7 @@ class StackedWidgets extends StatelessWidget {
         .toList();
 
     return Stack(
-      children: allItems
+      children: allItems.reversed.toList()
     );
   }
 }
