@@ -8,7 +8,7 @@ class StackedWidgets extends StatelessWidget {
     Key? key,
     required this.items,
     this.size = 100,
-    this.xShift = 10,
+    this.xShift = 40,
   }) : super(key: key);
 
   @override

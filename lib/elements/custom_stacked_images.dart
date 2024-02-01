@@ -3,8 +3,7 @@ import 'package:glaxit_task/elements/custom_image.dart';
 import 'package:glaxit_task/elements/stack_widget.dart';
 
 Widget buildStackedImages() {
-  const double size = 100;
-  const double xShift = 40;
+
   final urlImages = [
     "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg",
     "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg",
@@ -16,7 +15,6 @@ Widget buildStackedImages() {
 
   return StackedWidgets(
     items: items,
-    size: size,
-    xShift: xShift,
+
   );
 }
